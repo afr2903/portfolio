@@ -18,12 +18,6 @@ const Resume = ({ classicHeader, darkTheme }) => {
       place: "Instituto Tecnológico y de Estudios Superiores de Monterrey",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
-    {
-      yearRange: "2009 - 2012",
-      title: "Master Degree",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
   ];
 
   const experienceDetails = [

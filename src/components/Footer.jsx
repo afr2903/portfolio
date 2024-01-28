@@ -10,7 +10,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
         <div className="row">
           <div className="col-lg-6 text-center text-lg-start">
             <p className="mb-3 mb-lg-0">
-              Copyright © 2023{" "}
+              Copyright © 2024{" "}
               <a
                 href="#home"
                 className="fw-500"
@@ -19,7 +19,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
                   handleNavClick("home");
                 }}
               >
-                Simone
+                Adán
               </a>
               . All Rights Reserved.
             </p>

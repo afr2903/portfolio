@@ -83,37 +83,24 @@ const Contact = ({ classicHeader, darkTheme }) => {
         <div className="row gy-5">
           {/* contact details */}
           <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
-            <h2
-              className={
-                "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
-              }
-            >
-              Address
-            </h2>
-            <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
-              4th Floor, Plot No.22,
-              <br />
-              145 Murphy Canyon Rd.
-              <br />
-              San Diego CA 2028
+            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
+              <span className="text-primary text-4 me-2">
+                <i className="fas fa-location-dot" />
+              </span>
+              San Luis Potosí, México
             </p>
             <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-phone" />
               </span>
-              (060) 444 434 444
-            </p>
-            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-fax" />
-              </span>
-              (060) 555 545 555
+              +52 (444) 356 5701
             </p>
             <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-envelope" />
-              </span>
-              chat@simone.com
+              </span><a href="mailto:afr102903@gmail.com " style={{color: "white"}}>
+                afr102903@gmail.com
+                </a>
             </p>
             <h2
               className={
@@ -128,58 +115,36 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "social-icons-muted" : "")
               }
             >
-              <li className="social-icons-dribbble">
-                <Tooltip text="Dribbble" placement="top">
+              <li className="social-icons-linkedin">
+                <Tooltip text="Linkedin" placement="top">
                   <a
-                    href="http://www.dribbble.com/harnishdesign/"
+                    href="http://www.linkedin.com/in/adanfr"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-dribbble" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-twitter">
-                <Tooltip text="Twitter" placement="top">
-                  <a
-                    href="https://twitter.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-facebook">
-                <Tooltip text="Facebook" placement="top">
-                  <a
-                    href="http://www.facebook.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-google">
-                <Tooltip text="Google" placement="top">
-                  <a
-                    href="http://www.google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-google" />
+                    <i className="fab fa-linkedin" />
                   </a>
                 </Tooltip>
               </li>
               <li className="social-icons-github">
                 <Tooltip text="Github" placement="top">
                   <a
-                    href="http://www.github.com/"
+                    href="http://www.github.com/afr2903"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="fab fa-github" />
+                  </a>
+                </Tooltip>
+              </li>
+              <li className="social-icons-flickr">
+                <Tooltip text="Instagram" placement="top">
+                  <a
+                  href="http://www.instagram.com/afr.2903"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <i className="fab fa-instagram" />
                   </a>
                 </Tooltip>
               </li>
