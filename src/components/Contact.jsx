@@ -14,10 +14,10 @@ const Contact = ({ classicHeader, darkTheme }) => {
     setSendingMail(true);
     emailjs
       .sendForm(
-        "service_i86k3ms",
-        "template_si6cin9",
+        "service_l2n6zvj",
+        "template_7k3mx64",
         form.current,
-        "c9HsDgGF0tvWyVnAL"
+        "EXjW7JD2MiMNj_SfN"
       )
       .then(
         (result) => {
@@ -193,7 +193,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "text-white" : "")
               }
             >
-              Send us a note
+              Send me a note
             </h2>
             <form
               className={darkTheme ? "form-dark" : ""}

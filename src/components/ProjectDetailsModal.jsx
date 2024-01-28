@@ -146,7 +146,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                             (darkTheme ? " text-white" : "")
                           }
                         >
-                          Date:
+                          Duration:
                         </span>
                         {projectDetails?.date}
                       </li>

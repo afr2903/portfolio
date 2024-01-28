@@ -10,20 +10,20 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    DESIGN: "Desing",
-    BRAND: "Brand",
-    PHOTOS: "Photos",
+    ROBOTICS: "Robotics",
+    SOFTWARE: "Software",
+    MECHATRONICS: "Mechatronics",
   };
 
   const projectsData = [
     {
-      title: "Project Title 1",
+      title: "RoboCup @HOME",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
       client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
-      date: "July 16, 2019",
+      date: "January 2023 - Present",
       url: {
         name: "www.example.com",
         link: "https://www.example.com",
@@ -35,15 +35,15 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/project-1.jpg",
+      thumbImage: "images/projects/home-2.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
+        "images/projects/home-1.jpg",
         "images/projects/project-5.jpg",
       ],
-      categories: [filters.BRAND],
+      categories: [filters.ROBOTICS],
     },
     {
-      title: "Project Title 2",
+      title: "IEEE Latin American Robotics Competition",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
       client: "Ruby Clinton",
@@ -61,21 +61,21 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/project-2.jpg",
+      thumbImage: "images/projects/larc-1.jpg",
       sliderImages: [
         "images/projects/project-2.jpg",
         "images/projects/project-5.jpg",
       ],
-      categories: [filters.DESIGN],
+      categories: [filters.ROBOTICS],
     },
     {
-      title: "Project Title 3",
+      title: "STM32 Based Autonomous Car",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
+      client: "John Deere",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
-      date: "July 16, 2019",
+      date: "August 2023 - December 2023",
       url: {
         name: "www.example.com",
         link: "https://www.example.com",
@@ -87,12 +87,12 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/project-3.jpg",
+      thumbImage: "images/projects/stm-1.png",
       sliderImages: [
         "images/projects/project-3.jpg",
         "images/projects/project-5.jpg",
       ],
-      categories: [filters.PHOTOS],
+      categories: [filters.MECHATRONICS],
     },
     {
       title: "Project Title 4",
@@ -318,7 +318,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">Category</span>
+                            <span className="text-light">{project.categories.join(", ")}</span>
                           </div>
                         </div>
                       </div>

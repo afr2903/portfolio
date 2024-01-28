@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import resumeFile from "../documents/resume.pdf";
+import ExperienceDetailsModal from "./ExperienceDetailsModal";
 
 const Resume = ({ classicHeader, darkTheme }) => {
+  const [imagesLoaded, setimagesLoaded] = useState(0);
+  const [selectedExperienceDetails, setSelectedExperienceDetails] = useState();
   const educationDetails = [
     {
       yearRange: "2021 - 2025",
@@ -25,21 +28,26 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const experienceDetails = [
     {
-      yearRange: "2024",
+      yearRange: "Jun 2024 - Sep 2024",
       title: "Incoming Software Engineer Intern",
       place: "Google - Cloud Vertex AI",
+      src: "images/logos/google.jpg",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
-      yearRange: "2023 - Present",
+      yearRange: "Dec 2023 - Present",
       title: "Freelance Software Engineer",
       place: "Scale AI",
+      src: "images/logos/scaleai.jpg",
+      keypoints: "Improving the performance of LLMs by providing full-stack, troubleshooting and deployment solutions to miscellaneous prompts, developing and testing in different frameworks and programming languages.",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
+      yearRange: "Aug 2023 - Present",
+      title: "Software Engineer - AI Integration",
+      place: "Ixmatix Robotics",
+      src: "images/logos/ixmatix.jpg",
+      keypoints: "Developed a real-time voice assistant in Python and Elixir using APIs: OpenAI for response generation, Google Cloud speech recognition, and ElevenLabs speech generation. Increasing user engagement by 60%. Optimized response time with chunked transfer encoding and multithreading.\n\nIntegrated Google Docs API to ease the review of the content generated dynamically with Generative AI in Node JS, formatted for interactive h5p content. Content creation efficiency was improved by 50%.",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
   ];
@@ -72,6 +80,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
   ];
 
   return (
+    <>
     <section
       id="resume"
       className={"section " + (darkTheme ? "bg-dark-1" : "")}
@@ -100,41 +109,9 @@ const Resume = ({ classicHeader, darkTheme }) => {
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
-          {/* My Education */}
-          <div className="col-md-6">
-            <h2
-              className={
-                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
-              }
-            >
-              My Education
-            </h2>
-            {educationDetails.length > 0 &&
-              educationDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className={
-                    "bg-white  rounded p-4 mb-4 " +
-                    (darkTheme ? "bg-dark" : "bg-white border")
-                  }
-                >
-                  <p className="badge bg-primary text-2 fw-400">
-                    {value.yearRange}
-                  </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                    {value.title}
-                  </h3>
-                  <p className={darkTheme ? "text-primary" : "text-danger"}>
-                    {value.place}
-                  </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
-                  </p>
-                </div>
-              ))}
-          </div>
           {/* My Experience */}
-          <div className="col-md-6">
+          <div className="portfolio popup-ajax-gallery">
+          <div className="col-md-12">
             <h2
               className={
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
@@ -144,6 +121,65 @@ const Resume = ({ classicHeader, darkTheme }) => {
             </h2>
             {experienceDetails.length > 0 &&
               experienceDetails.map((value, index) => (
+                <div
+                  key={index}
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                  <div className="d-flex align-items-center mt-auto mb-4">
+                    <img
+                      className="img-fluid rounded-circle border d-inline-block w-auto"
+                      src={value.src}
+                      alt=""
+                      style={{ width: "50px", height: "50px"}}
+                    />
+                    <p className="ms-3 mb-0">
+                        <p className="badge bg-primary text-2 fw-400">
+                          {value.yearRange}
+                        </p>
+                        <h5 className={darkTheme ? "text-primary" : "text-danger"}>
+                          {value.place}
+                        </h5>
+                    </p>
+                  </div>
+                        <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                          {value.title}
+                        </h3>
+                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                    {value.keypoints}
+                  </p>
+                  <div className="portfolio-box-rounded">
+                    <button className="btn btn-primary btn-rounded btn-sm shadow-none mb-3" style={{position: "relative" }}>
+                      expand
+                    <a
+                      className="popup-ajax stretched-link"
+                      href=""
+                      onClick={() => {
+                        setSelectedExperienceDetails(experienceDetails[index]);
+                      }}
+                      data-bs-toggle="modal"
+                      data-bs-target="#expModal"
+                    />
+                    </button>
+                  </div>
+                </div>
+              ))}
+          </div></div>
+        </div>
+        <div className="row gx-5">
+          {/* My Education */}
+          <div className="col-md-12">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              My Education
+            </h2>
+            {educationDetails.length > 0 &&
+              educationDetails.map((value, index) => (
                 <div
                   key={index}
                   className={
@@ -219,6 +255,14 @@ const Resume = ({ classicHeader, darkTheme }) => {
         </div>
       </div>
     </section>
+      <div className="experience-details-modal">
+        {/* Modal */}
+        <ExperienceDetailsModal
+          experienceDetails={selectedExperienceDetails}
+          darkTheme={darkTheme}
+        ></ExperienceDetailsModal>
+      </div>
+    </>
   );
 };
 
