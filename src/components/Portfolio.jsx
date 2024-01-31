@@ -20,7 +20,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "RoboCup @HOME",
       projectInfo: [
         <> Development of an autonomous service robot with my university's robotics team, which is actively participating in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> research competition. Capable of listening and responding to commands such as going to a target place or bringing specific objects. Using ROS framework in Nvidia Jetson Xavier. Leading and working on: </>,
-        <>• <i>Behavior Integration:</i> Merge of software submodules in a single script (node) to achieve adaptive behaviors.</>,
+        <>● <i>Behavior Integration:</i> Merge of software submodules in a single script (node) to achieve adaptive behaviors.</>,
         <>• <i>Object Detection/Manipulation:</i> MoveIt trajectory planning framework with robot context created using a depth camera to detect collisions, and detections from a YoloV8 model. </>,
         <>• <i>Human-Robot Interaction:</i> Implementation of Whisper and Embeddings to translate speech into robot commands. </>
       ],
@@ -45,13 +45,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           link: "https://drive.google.com/file/d/1mCu9thW-QwSdetF1R7-NDVVR_-0lcTIj/view?usp=sharing",
         },
       ],
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
       thumbImage: "images/projects/home-1.png",
       sliderImages: [
         "images/projects/home-2.png",
@@ -62,27 +55,37 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "IEEE Latin American Robotics Competition",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
+      projectInfo: [
+        <> Creation of an autonomous warehouse mobile robot at scale to compete in the <a href="https://www.cbrobotica.org/index.php/categorias/" target="_blank" rel="noopener noreferrer">IEEE Latin American Robotics Competition Open Challenge</a>, held in Salvador Bahia, Brazil. The challenge, required to develop a robot capable of navigating the environment using 3D computer vision and collecting labeled packages to store them properly. My team and I achieved the first place in this competition.</>,
+        <>Leading the software integration and navigation, we developed a stable solution to identify the packages and extract visual odometry from the field using a single stereo camera. The complete software pipeline involved the use of ROS framework in an Nvidia Jetson, the creation of custom low-level synchronous serial communication with a microcontroller, implementation of Visual SLAM algorithms, custom object detection CV models, and behavior integration.</>,
+      ],
+      client: "Tecnológico de Monterrey, RoBorregos",
+      technologies: "ROS, C++, Python, LaTex, Yolo, OpenCV, PCL, OrbSLAM, Nvidia Jetson, Teensy",
+      industry: "Warehouse Robotics",
+      date: "February 2023 - October 2023",
+      urls: [ 
+        {
+          icon: "fa-solid fa-newspaper",
+          name: "Note from the university news site",
+          link: "https://conecta.tec.mx/en/news/monterrey/education/repeated-feat-tec-robotics-team-comes-first-brazilian-competition"
+        },
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/RoBorregos/LARC-2023/tree/localization"
+        },
+        {
+          icon: "fa-solid fa-file",
+          name: "Description Paper",
+          link: "https://drive.google.com/file/d/1s7HFN_S46B7Fs3DTkdvlC7ujkVxNHRhy/view?usp=sharing"
+        },
+      ],
       thumbImage: "images/projects/larc-1.jpg",
       sliderImages: [
-        "images/projects/project-2.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/larc-2.jpg",
+        "images/projects/larc-3.png",
+        "images/projects/larc-4.jpg",
+        "images/projects/larc-5.jpg",
       ],
       categories: [filters.ROBOTICS],
     },
