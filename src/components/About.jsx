@@ -36,16 +36,14 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               I'm <span className="text-primary">Adán Flores,</span> a Robotics Software Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I develop software for robotics, artificial intelligence and automation applications.
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+              I develop software for robotics, artificial intelligence and automation applications. R&D in Mobile Robotics and Extended Reality.
+              I'm a proficient and passionate engineering student with experience in team-based software development and robotics, 
+              always eager to learn and self-driven towards solving world problems.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              After several years of experience in international robotics and programming competitions 
+              as well as learning courses and personal projects, I have gained outstanding skills in problem solving, 
+              research and leadership. Also, my determination and my ability as a technician have been proved useful under pressure.
             </p>
           </div>
           {/* About me content end */}
@@ -132,10 +130,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>650</span>+
+                  <span>15</span>+
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Projects Done
+                  Awards Won
                 </p>
               </div>
             </div>
@@ -147,10 +145,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>20</span>
+                  <span>30</span>+
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Awards Won
+                  Robotics & Programming competitions
                 </p>
               </div>
             </div>

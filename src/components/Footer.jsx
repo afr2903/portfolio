@@ -10,20 +10,19 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
         <div className="row">
           <div className="col-lg-6 text-center text-lg-start">
             <p className="mb-3 mb-lg-0">
-              Copyright © 2024{" "}
-              <a
-                href="#home"
-                className="fw-500"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick("home");
-                }}
-              >
-                Adán
-              </a>
-              . All Rights Reserved.
+              Adán Flores Ramírez
             </p>
           </div>
+          <div className="col-lg-6">
+            <ul className="nav nav-separator justify-content-center justify-content-lg-end">
+              <li className="nav-item">
+              </li>
+              <li className="nav-item">
+                Last Update: January 31, 2024
+              </li>
+            </ul>
+          </div>
+          {/*
           <div className="col-lg-6">
             <ul className="nav nav-separator justify-content-center justify-content-lg-end">
               <li className="nav-item">
@@ -48,6 +47,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
               </li>
             </ul>
           </div>
+              */}
         </div>
       </div>
     </footer>
