@@ -87,7 +87,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
     <>
     <section
       id="resume"
-      className={"section " + (darkTheme ? "bg-dark-1" : "")}
+      className={"section " + (darkTheme ? "bg-dark-2" : "")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
@@ -216,49 +216,57 @@ const Resume = ({ classicHeader, darkTheme }) => {
                     </div>*/}
                 </div>
               ))}
-          </div></div>
+          </div>
         </div>
-        {/* My Skills */}
-        <h2
-          className={
-            "text-6 fw-600 mt-4 mb-4 " + (darkTheme ? "text-white" : "")
-          }
-        >
-          My Skills
-        </h2><p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
-  </a>
-</p>
+
+
         <div className="row gx-5">
-          {skills.length > 0 &&
-            skills.map((skill, index) => (
-              <div key={index} className="col-md-6">
-                <p
-                  className={
-                    " fw-500 text-start mb-2 " +
-                    (darkTheme ? "text-light" : "text-dark")
-                  }
-                >
-                  {skill.name}{" "}
-                  <span className="float-end">{skill.percent}%</span>
-                </p>
+          <div className="portfolio popup-ajax-gallery">
+          <div className="col-md-12">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              My Skills
+            </h2>
                 <div
                   className={
-                    "progress progress-sm mb-4 " + (darkTheme ? "bg-dark" : "")
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
                   }
                 >
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: skill.percent + "%" }}
-                    aria-valuenow={skill.percent}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  />
+                        <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                        Programming Languages
+                        </h3>
+                        <br></br>
+                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")} align="left">
+                    <a href="https://skillicons.dev">
+                      <img src="https://skillicons.dev/icons?i=cpp,py,java,js,cs,c,elixir,latex,matlab,php"/>
+                    </a>
+                  </p>
+                </div>
+                <div
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                        <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                        Technologies
+                        </h3>
+                        <br></br>
+                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")} align="left">
+                    <a href="https://skillicons.dev">
+                      <img src="https://skillicons.dev/icons?i=ros,opencv,gcp,tensorflow,unity,sklearn,pytorch,git,docker,linux,arduino,raspberrypi,html,laravel,anaconda,blender,powershell,vscode"/>
+                    </a>
+                  </p>
                 </div>
               </div>
-            ))}
+            </div>
+        </div>
+
+
         </div>
         <div className="text-center mt-5">
           <a
