@@ -18,16 +18,33 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const projectsData = [
     {
       title: "RoboCup @HOME",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
+      projectInfo: [
+        <> Development of an autonomous service robot with my university's robotics team, which is actively participating in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> research competition. Capable of listening and responding to commands such as going to a target place or bringing specific objects. Using ROS framework in Nvidia Jetson Xavier. Leading and working on: </>,
+        <>• <i>Behavior Integration:</i> Merge of software submodules in a single script (node) to achieve adaptive behaviors.</>,
+        <>• <i>Object Detection/Manipulation:</i> MoveIt trajectory planning framework with robot context created using a depth camera to detect collisions, and detections from a YoloV8 model. </>,
+        <>• <i>Human-Robot Interaction:</i> Implementation of Whisper and Embeddings to translate speech into robot commands. </>
+      ],
+      client: "Tecnológico de Monterrey, RoBorregos",
+      technologies: "ROS, ROS2, C++, Python, LaTex, OpenAI, MoveIt, Yolo, Nvidia Jetson, PyTorch",
+      industry: "Service Robotics",
       date: "January 2023 - Present",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
+      urls: [ 
+        {
+          icon: "fa-brands fa-youtube",
+          name: "Video Demo",
+          link: "https://drive.google.com/file/d/1GUi6asX8iptuVJpgJzDpP-w_M0vb_3KG/view?usp=sharing",
+        },
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/RoBorregos/robocup-home",
+        },
+        {
+          icon: "fa-solid fa-file",
+          name: "Description Paper 2023",
+          link: "https://drive.google.com/file/d/1mCu9thW-QwSdetF1R7-NDVVR_-0lcTIj/view?usp=sharing",
+        },
+      ],
       socialLinks: {
         facebook: "http://www.facebook.com/",
         twitter: "http://www.twitter.com/",
@@ -35,10 +52,11 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/home-2.png",
+      thumbImage: "images/projects/home-1.png",
       sliderImages: [
-        "images/projects/home-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/home-2.png",
+        "images/projects/home-3.jpeg",
+        "images/projects/home-4.jpg",
       ],
       categories: [filters.ROBOTICS],
     },
@@ -96,8 +114,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "Project Title 4",
-      projectInfo:
+      projectInfo: [
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      ],
       client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
@@ -122,8 +141,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "Project Title 5",
-      projectInfo:
+      projectInfo: [
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      ],
       client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
@@ -148,8 +168,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "Project Title 6",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      projectInfo: [
+        "Quidam lisq>ue persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      ],
       client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",

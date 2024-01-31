@@ -10,13 +10,15 @@ const Resume = ({ classicHeader, darkTheme }) => {
       yearRange: "2021 - 2025",
       title: "B.S. in Mechatronics Engineering",
       place: "Instituto Tecnológico y de Estudios Superiores de Monterrey",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      src: "images/logos/tec.png",
+      desc: "Academic Scolarship holder, Robotics Research Team, Smart Factory. Relevant Coursework: Programming of Data Structures and Fundamental Algorithms, Object-Oriented Programming, Multi-Agent Systems with Computer Graphics, Industrial Automation",
     },
     {
       yearRange: "2018 - 2021",
       title: "Bicultural High School Diploma",
       place: "Instituto Tecnológico y de Estudios Superiores de Monterrey",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      src: "images/logos/tec.png",
+      desc: "FIRST Robotics Competition Alumni, Academic honorific mention, Leadership 'Borrego de Oro' winner. Relevant Coursework: CS50, AP Calculus, AP English",
     },
   ];
 
@@ -29,6 +31,14 @@ const Resume = ({ classicHeader, darkTheme }) => {
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
+      yearRange: "Aug 2023 - Present",
+      title: "Software Engineer - AI Integration",
+      place: "Ixmatix Robotics",
+      src: "images/logos/ixmatix.jpg",
+      keypoints: "Developing AI features with Python and Elixir for the company's math learning platform, including a dynamic content generator and a real-time voice assistant tutor. Implementing Generative AI, Text-to-Speech and Speech generation models through APIs (OpenAI, Azure, ElevenLabs).",
+      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    },
+    {
       yearRange: "Dec 2023 - Present",
       title: "Freelance Software Engineer",
       place: "Scale AI",
@@ -37,11 +47,11 @@ const Resume = ({ classicHeader, darkTheme }) => {
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
-      yearRange: "Aug 2023 - Present",
-      title: "Software Engineer - AI Integration",
-      place: "Ixmatix Robotics",
-      src: "images/logos/ixmatix.jpg",
-      keypoints: "Developed a real-time voice assistant in Python and Elixir using APIs: OpenAI for response generation, Google Cloud speech recognition, and ElevenLabs speech generation. Increasing user engagement by 60%. Optimized response time with chunked transfer encoding and multithreading.\n\nIntegrated Google Docs API to ease the review of the content generated dynamically with Generative AI in Node JS, formatted for interactive h5p content. Content creation efficiency was improved by 50%.",
+      yearRange: "Jan 2023 - Nov 2023",
+      title: "Robotics Engineer & PM Intern",
+      place: "ITESM - Smart Factory",
+      src: "images/logos/smart_factory.jpg",
+      keypoints: "Leading the development of a Cyber-Physical factory currently used by undergrad students and as a research project. Managing and assigning tasks to other interns in Automation, Robotics, VR and Computer vision.",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
   ];
@@ -103,6 +113,51 @@ const Resume = ({ classicHeader, darkTheme }) => {
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
+          {/* My Education */}
+          <div className="col-md-12">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              My Education
+            </h2>
+            {educationDetails.length > 0 &&
+              educationDetails.map((value, index) => (
+                <div
+                  key={index}
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                  <div className="d-flex align-items-center mt-auto mb-4">
+                    <img
+                      className="img-fluid rounded-circle border d-inline-block w-auto"
+                      src={value.src}
+                      alt=""
+                      style={{ width: "50px", height: "50px"}}
+                    />
+                    <p className="ms-3 mb-0">
+                        <p className="badge bg-primary text-2 fw-400">
+                          {value.yearRange}
+                        </p>
+                        <h5 className={darkTheme ? "text-primary" : "text-danger"}>
+                          {value.place}
+                        </h5>
+                    </p>
+                  </div>
+                        <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                          {value.title}
+                        </h3>
+                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                    {value.desc}
+                  </p>
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className="row gx-5">
           {/* My Experience */}
           <div className="portfolio popup-ajax-gallery">
           <div className="col-md-12">
@@ -144,6 +199,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                   <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                     {value.keypoints}
                   </p>
+                  {/* Details button */}{/*
                   <div className="portfolio-box-rounded">
                     <button className="btn btn-primary btn-rounded btn-sm shadow-none mb-3" style={{position: "relative" }}>
                       expand
@@ -157,45 +213,10 @@ const Resume = ({ classicHeader, darkTheme }) => {
                       data-bs-target="#expModal"
                     />
                     </button>
-                  </div>
+                    </div>*/}
                 </div>
               ))}
           </div></div>
-        </div>
-        <div className="row gx-5">
-          {/* My Education */}
-          <div className="col-md-12">
-            <h2
-              className={
-                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
-              }
-            >
-              My Education
-            </h2>
-            {educationDetails.length > 0 &&
-              educationDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className={
-                    "bg-white  rounded p-4 mb-4 " +
-                    (darkTheme ? "bg-dark" : "bg-white border")
-                  }
-                >
-                  <p className="badge bg-primary text-2 fw-400">
-                    {value.yearRange}
-                  </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                    {value.title}
-                  </h3>
-                  <p className={darkTheme ? "text-primary" : "text-danger"}>
-                    {value.place}
-                  </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
-                  </p>
-                </div>
-              ))}
-          </div>
         </div>
         {/* My Skills */}
         <h2
@@ -204,7 +225,11 @@ const Resume = ({ classicHeader, darkTheme }) => {
           }
         >
           My Skills
-        </h2>
+        </h2><p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
         <div className="row gx-5">
           {skills.length > 0 &&
             skills.map((skill, index) => (
@@ -238,7 +263,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
         <div className="text-center mt-5">
           <a
             className="btn btn-outline-secondary rounded-pill shadow-none"
-            href={resumeFile}
+            href={"/Adan_Flores_resume.pdf"}
             download
           >
             Download CV

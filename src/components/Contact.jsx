@@ -98,7 +98,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
             <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-envelope" />
-              </span><a href="mailto:afr102903@gmail.com " style={{color: "white"}}>
+              </span><a href="mailto:afr102903@gmail.com" target="_blank" style={{color: "white"}}>
                 afr102903@gmail.com
                 </a>
             </p>
