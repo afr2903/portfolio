@@ -91,16 +91,17 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "STM32 Based Autonomous Car",
-      projectInfo:
+      projectInfo: [
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      ],
       client: "John Deere",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
       date: "August 2023 - December 2023",
-      url: {
+      url: [{
         name: "www.example.com",
         link: "https://www.example.com",
-      },
+      }],
       socialLinks: {
         facebook: "http://www.facebook.com/",
         twitter: "http://www.twitter.com/",

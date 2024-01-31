@@ -242,8 +242,17 @@ const Resume = ({ classicHeader, darkTheme }) => {
                         <br></br>
                   <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")} align="left">
                     <a href="https://skillicons.dev">
-                      <img src="https://skillicons.dev/icons?i=cpp,py,java,js,cs,c,elixir,latex,matlab,php"/>
+                      <img src="https://skillicons.dev/icons?i=cpp" style={{marginRight: "5px"}}/>
                     </a>
+                      <img src="https://skillicons.dev/icons?i=py" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=java" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=js" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=cs" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=c" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=elixir" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=latex" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=matlab" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=php" style={{marginRight: "5px"}}/>
                   </p>
                 </div>
                 <div
@@ -258,8 +267,25 @@ const Resume = ({ classicHeader, darkTheme }) => {
                         <br></br>
                   <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")} align="left">
                     <a href="https://skillicons.dev">
-                      <img src="https://skillicons.dev/icons?i=ros,opencv,gcp,tensorflow,unity,sklearn,pytorch,git,docker,linux,arduino,raspberrypi,html,laravel,anaconda,blender,powershell,vscode"/>
+                      <img src="https://skillicons.dev/icons?i=ros" style={{marginRight: "5px"}}/>
                     </a>
+                      <img src="https://skillicons.dev/icons?i=opencv" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=gcp" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=tensorflow" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=unity" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=sklearn" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=pytorch" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=git" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=docker" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=linux" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=arduino" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=raspberrypi" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=html" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=laravel" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=anaconda" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=blender" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=bash" style={{marginRight: "5px"}}/>
+                      <img src="https://skillicons.dev/icons?i=vscode" style={{marginRight: "5px"}}/>
                   </p>
                 </div>
               </div>
