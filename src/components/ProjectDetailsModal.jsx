@@ -71,7 +71,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     <Slider {...settings} ref={sliderRef}>
                       <div className="item">
                         <img
-                          className="img-fluid"
+                          className="img-fluid mx-auto"
                           alt=""
                           src={projectDetails?.thumbImage}
                         />
@@ -117,7 +117,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                             (darkTheme ? " text-white" : "")
                           }
                         >
-                          Client:
+                          Collaboration with:
                         </span>
                         {projectDetails?.client}
                       </li>

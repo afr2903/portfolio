@@ -21,8 +21,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       projectInfo: [
         <> Development of an autonomous service robot with my university's robotics team, which is actively participating in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> research competition. Capable of listening and responding to commands such as going to a target place or bringing specific objects. Using ROS framework in Nvidia Jetson Xavier. Leading and working on: </>,
         <>● <i>Behavior Integration:</i> Merge of software submodules in a single script (node) to achieve adaptive behaviors.</>,
-        <>• <i>Object Detection/Manipulation:</i> MoveIt trajectory planning framework with robot context created using a depth camera to detect collisions, and detections from a YoloV8 model. </>,
-        <>• <i>Human-Robot Interaction:</i> Implementation of Whisper and Embeddings to translate speech into robot commands. </>
+        <>● <i>Object Detection/Manipulation:</i> MoveIt trajectory planning framework with robot context created using a depth camera to detect collisions, and detections from a YoloV8 model. </>,
+        <>● <i>Human-Robot Interaction:</i> Implementation of Whisper and Embeddings to translate speech into robot commands. </>
       ],
       client: "Tecnológico de Monterrey, RoBorregos",
       technologies: "ROS, ROS2, C++, Python, LaTex, OpenAI, MoveIt, Yolo, Nvidia Jetson, PyTorch",
@@ -65,6 +65,42 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "February 2023 - October 2023",
       urls: [ 
         {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/RoBorregos/LARC-2023/tree/localization"
+        },
+        {
+          icon: "fa-solid fa-file",
+          name: "Description Paper",
+          link: "https://drive.google.com/file/d/1s7HFN_S46B7Fs3DTkdvlC7ujkVxNHRhy/view?usp=sharing"
+        },
+        {
+          icon: "fa-brands fa-youtube",
+          name: "Video Demo",
+          link: "https://drive.google.com/file/d/1GUi6asX8iptuVJpgJzDpP-w_M0vb_3KG/view?usp=sharing",
+        },
+      ],
+      thumbImage: "images/projects/larc-1.jpg",
+      sliderImages: [
+        "images/projects/larc-2.jpg",
+        "images/projects/larc-3.png",
+        "images/projects/larc-4.jpg",
+        "images/projects/larc-5.jpg",
+      ],
+      categories: [filters.ROBOTICS],
+    },
+    {
+      title: "STM32 Based Autonomous Car",
+      projectInfo: [
+        <>University's project for the Industrial Automation class of the 5th semester of the Mechatronics Engineering degree. Using an STM32f103c8t6 board, the deliverable was an autonomous car at scale with Ackerman steering, capable of receiving position commands and coordinates from a Bluetooth device, and executing them with precision.</>,
+        <>Two PID controllers were characterized and implemented, for a single DC motor, and for the steering angle. Also, there were integrated IMU, GPS, ultrasonic, and encoder sensors, and a Bluetooth module. My team additionally created a Unity simulation to send and receive coordinates and positions.</>
+      ],
+      client: "John Deere",
+      technologies: "C, STM32CubeIDE, PID Control, SolidWorks, Unity, Additive Manufacturing",
+      industry: "Industrial Automation",
+      date: "August 2023 - November 2023",
+      urls: [ 
+        {
           icon: "fa-solid fa-newspaper",
           name: "Note from the university news site",
           link: "https://conecta.tec.mx/en/news/monterrey/education/repeated-feat-tec-robotics-team-comes-first-brazilian-competition"
@@ -80,35 +116,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           link: "https://drive.google.com/file/d/1s7HFN_S46B7Fs3DTkdvlC7ujkVxNHRhy/view?usp=sharing"
         },
       ],
-      thumbImage: "images/projects/larc-1.jpg",
-      sliderImages: [
-        "images/projects/larc-2.jpg",
-        "images/projects/larc-3.png",
-        "images/projects/larc-4.jpg",
-        "images/projects/larc-5.jpg",
-      ],
-      categories: [filters.ROBOTICS],
-    },
-    {
-      title: "STM32 Based Autonomous Car",
-      projectInfo: [
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      ],
-      client: "John Deere",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "August 2023 - December 2023",
-      url: [{
-        name: "www.example.com",
-        link: "https://www.example.com",
-      }],
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
       thumbImage: "images/projects/stm-1.png",
       sliderImages: [
         "images/projects/project-3.jpg",
