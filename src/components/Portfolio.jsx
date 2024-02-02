@@ -31,8 +31,13 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       urls: [ 
         {
           icon: "fa-brands fa-youtube",
-          name: "Video Demo",
+          name: "Implementation Video Demo 2023",
           link: "https://drive.google.com/file/d/1GUi6asX8iptuVJpgJzDpP-w_M0vb_3KG/view?usp=sharing",
+        },
+        {
+          icon: "fa-solid fa-newspaper",
+          name: "Poster presented at the university's engineering fair",
+          link: "https://drive.google.com/file/d/1A98j-gd1dZQqXc6BxjoYxWoXqjLDkyTm/view?usp=sharing"
         },
         {
           icon: "fab fa-github",
@@ -65,6 +70,11 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "February 2023 - October 2023",
       urls: [ 
         {
+          icon: "fa-solid fa-newspaper",
+          name: "Note from the university news site",
+          link: "https://conecta.tec.mx/en/news/monterrey/education/repeated-feat-tec-robotics-team-comes-first-brazilian-competition"
+        },
+        {
           icon: "fab fa-github",
           name: "GitHub Repo",
           link: "https://github.com/RoBorregos/LARC-2023/tree/localization"
@@ -73,11 +83,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           icon: "fa-solid fa-file",
           name: "Description Paper",
           link: "https://drive.google.com/file/d/1s7HFN_S46B7Fs3DTkdvlC7ujkVxNHRhy/view?usp=sharing"
-        },
-        {
-          icon: "fa-brands fa-youtube",
-          name: "Video Demo",
-          link: "https://drive.google.com/file/d/1GUi6asX8iptuVJpgJzDpP-w_M0vb_3KG/view?usp=sharing",
         },
       ],
       thumbImage: "images/projects/larc-1.jpg",
@@ -101,25 +106,52 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "August 2023 - November 2023",
       urls: [ 
         {
-          icon: "fa-solid fa-newspaper",
-          name: "Note from the university news site",
-          link: "https://conecta.tec.mx/en/news/monterrey/education/repeated-feat-tec-robotics-team-comes-first-brazilian-competition"
-        },
-        {
           icon: "fab fa-github",
-          name: "GitHub Repo",
-          link: "https://github.com/RoBorregos/LARC-2023/tree/localization"
+          name: "GitHub Repo main file",
+          link: "https://github.com/afr2903/john-deere-sdv/blob/main/sdv.c"
         },
         {
           icon: "fa-solid fa-file",
-          name: "Description Paper",
-          link: "https://drive.google.com/file/d/1s7HFN_S46B7Fs3DTkdvlC7ujkVxNHRhy/view?usp=sharing"
+          name: "Final report",
+          link: "https://drive.google.com/file/d/1GDkEPaOw7KDgFyLfbbvv5QoR-i-RSVw7/view?usp=sharing"
+        },
+        {
+          icon: "fa-brands fa-youtube",
+          name: "Video Demo",
+          link: "https://drive.google.com/file/d/15cb1wvuLQZcpIMNCxgF2n9-tJrYreJf5/view?usp=sharing"
         },
       ],
       thumbImage: "images/projects/stm-1.png",
       sliderImages: [
-        "images/projects/project-3.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/stm-2.png",
+      ],
+      categories: [filters.MECHATRONICS],
+    },
+    {
+      title: "Waste classifier machine",
+      projectInfo: [
+        <>University's project for the Mechatronic Design class. A project had to be proposed from scratch to help the fullfilment of one of the <a href="https://www.un.org/sustainabledevelopment/en/" target="_blank" rel="noopener noreferrer">UN's Sustainable Development Goals</a>. My team and I proposed a waste classifier machine, capable of identifying and separating plastic, glass, and aluminum using a YoloV8 model trained on a large dataset. </>,
+      ],
+      client: "ITESM",
+      technologies: "Python, Arduino, YoloV8, Tensorflow, Nvidia Jetson, OpenCV, Additive Manufacturing",
+      industry: "Product Design",
+      date: "October 2023 - November 2023",
+      urls: [ 
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/afr2903/waste-classifier-machine"
+        },
+        {
+          icon: "fa-solid fa-file",
+          name: "Final report",
+          link: "https://drive.google.com/file/d/1H9mi45AX72vZWb6QSVloAj6BtAsFhQpb/view?usp=sharing"
+        },
+      ],
+      thumbImage: "images/projects/waste-classifier-1.png",
+      sliderImages: [
+        "images/projects/waste-classifier-2.png",
+        "images/projects/waste-classifier-3.png",
       ],
       categories: [filters.MECHATRONICS],
     },
