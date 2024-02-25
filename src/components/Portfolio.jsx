@@ -59,6 +59,47 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.ROBOTICS],
     },
     {
+      title: "RoboCupid 2024",
+      projectInfo: [
+        <> Software project for the robotics team in the university, with Valentine's Day theme. A survey with open and closed questions was conducted to gather data on the preferences and personalities of the students. Then, an algorithm powered by machine learning tools was developed to match the students based on a preprocessing of their responses. </>,
+        <> Some open question were processed using transformers in python to extract their embeddings vector, and some other were processed with OpenAI GPT-4 to standarize and extract a concrete answer. The closed questions were processed with a simple decision tree. </>,
+        <> When all the responses were proccesed and the matches were found, a script was developed to send a personalized message to each student via email with SMTP protocol. </>
+      ],
+      client: "Tecnológico de Monterrey, RoBorregos",
+      technologies: "Python, Transformers, OpenAI, SMTP",
+      industry: "Software Development",
+      date: "February 2024",
+      urls: [ 
+        {
+          icon: "fa-brands fa-youtube",
+          name: "Implementation Video Demo 2023",
+          link: "https://drive.google.com/file/d/1GUi6asX8iptuVJpgJzDpP-w_M0vb_3KG/view?usp=sharing",
+        },
+        {
+          icon: "fa-solid fa-newspaper",
+          name: "Poster presented at the university's engineering fair",
+          link: "https://drive.google.com/file/d/1A98j-gd1dZQqXc6BxjoYxWoXqjLDkyTm/view?usp=sharing"
+        },
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/RoBorregos/robocup-home",
+        },
+        {
+          icon: "fa-solid fa-file",
+          name: "Description Paper 2023",
+          link: "https://drive.google.com/file/d/1mCu9thW-QwSdetF1R7-NDVVR_-0lcTIj/view?usp=sharing",
+        },
+      ],
+      thumbImage: "images/projects/robocupido-1.jpeg",
+      sliderImages: [
+        "images/projects/home-2.png",
+        "images/projects/home-3.jpeg",
+        "images/projects/home-4.jpg",
+      ],
+      categories: [filters.ROBOTICS],
+    },
+    {
       title: "IEEE Latin American Robotics Competition",
       projectInfo: [
         <> Creation of an autonomous warehouse mobile robot at scale to compete in the <a href="https://www.cbrobotica.org/index.php/categorias/" target="_blank" rel="noopener noreferrer">IEEE Latin American Robotics Competition Open Challenge</a>, held in Salvador Bahia, Brazil. The challenge, required to develop a robot capable of navigating the environment using 3D computer vision and collecting labeled packages to store them properly. My team and I achieved the first place in this competition.</>,
@@ -123,7 +164,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       thumbImage: "images/projects/stm-1.png",
       sliderImages: [
-        "images/projects/stm-2.png",
+        "images/projects/stm-2.jpeg",
+        "images/projects/stm-3.png",
       ],
       categories: [filters.MECHATRONICS],
     },
