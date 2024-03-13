@@ -71,25 +71,10 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "February 2024",
       urls: [ 
         {
-          icon: "fa-brands fa-youtube",
-          name: "Implementation Video Demo 2023",
-          link: "https://drive.google.com/file/d/1GUi6asX8iptuVJpgJzDpP-w_M0vb_3KG/view?usp=sharing",
-        },
-        {
-          icon: "fa-solid fa-newspaper",
-          name: "Poster presented at the university's engineering fair",
-          link: "https://drive.google.com/file/d/1A98j-gd1dZQqXc6BxjoYxWoXqjLDkyTm/view?usp=sharing"
-        },
-        {
           icon: "fab fa-github",
           name: "GitHub Repo",
-          link: "https://github.com/RoBorregos/robocup-home",
-        },
-        {
-          icon: "fa-solid fa-file",
-          name: "Description Paper 2023",
-          link: "https://drive.google.com/file/d/1mCu9thW-QwSdetF1R7-NDVVR_-0lcTIj/view?usp=sharing",
-        },
+          link: "https://github.com/RoBorregos/robocupido_2024",
+        }
       ],
       thumbImage: "images/projects/robocupido-1.jpeg",
       sliderImages: [
