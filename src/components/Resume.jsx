@@ -31,6 +31,14 @@ const Resume = ({ classicHeader, darkTheme }) => {
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
+      yearRange: "Jan 2023 - Present",
+      title: "Robotics Engineer & PM Intern",
+      place: "ITESM - Smart Factory",
+      src: "images/logos/smart_factory.jpg",
+      keypoints: "Leading the development of a Cyber-Physical factory currently used by undergrad students and as a research project. Managing and assigning tasks to other interns in Automation, Robotics, VR and Computer vision.",
+      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    },
+    {
       yearRange: "Aug 2023 - March 2024",
       title: "Software Engineer - AI Integration",
       place: "Ixmatix Robotics",
@@ -44,14 +52,6 @@ const Resume = ({ classicHeader, darkTheme }) => {
       place: "Scale AI",
       src: "images/logos/scaleai.jpg",
       keypoints: "Improving the performance of LLMs by providing full-stack, troubleshooting and deployment solutions to miscellaneous prompts, developing and testing in different frameworks and programming languages.",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "Jan 2023 - Dec 2023",
-      title: "Robotics Engineer & PM Intern",
-      place: "ITESM - Smart Factory",
-      src: "images/logos/smart_factory.jpg",
-      keypoints: "Leading the development of a Cyber-Physical factory currently used by undergrad students and as a research project. Managing and assigning tasks to other interns in Automation, Robotics, VR and Computer vision.",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
