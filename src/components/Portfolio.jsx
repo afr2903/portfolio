@@ -59,6 +59,52 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.ROBOTICS],
     },
     {
+      title: "FrED Factory",
+      projectInfo: [
+        <> Collaborative robotics challenge. Assembly of a production line working alongside collaborative robots, programming PLCs, HMIs, sensors and actuators. Simulating and programming digital twins. </>,
+        <> I led the programming area of the whole class, teaching CI/CD practices, documentation and Agile project management. </>
+      ],
+      client: "Massachusetts Institute of Technology, Tecnologico de Monterrey",
+      technologies: "Python, Unity, SolidWorks, OpenAI, TiaPortal, SCRUM, Git",
+      industry: "Industry 5.0",
+      date: "February 2024 - May 2024",
+      urls: [ 
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/afr2903/FrED-factory",
+        }
+      ],
+      thumbImage: "images/projects/fred-1.png",
+      sliderImages: [
+      ],
+      categories: [filters.MECHATRONICS],
+    },
+    {
+      title: "Manchester Robotics Challenges",
+      projectInfo: [
+        <> Completed courses on various robotics topics and implemented them in ROS as challenges, including: </>,
+        <> SLAM using Kalman filters and sensor fusion with vision markers, encoder odometry, and lidar. </>,
+        <> PID and MPC control implementations using kinematic and dynamic models, with simulations in Gazebo. </>
+      ],
+      client: "Manchester Robotics, Tecnológico de Monterrey",
+      technologies: "ROS, Python, Control, Linux, Git",
+      industry: "Educational Robotics",
+      date: "February 2024 - March 2024",
+      urls: [ 
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/afr2903/MR3001B_Design_and_Development_of_Robots_I/",
+        }
+      ],
+      thumbImage: "images/projects/manchester-1.png",
+      sliderImages: [
+        "images/projects/manchester-2.png",
+      ],
+      categories: [filters.ROBOTICS],
+    },
+    {
       title: "RoboCupid 2024",
       projectInfo: [
         <> Software project for the robotics team in the university, with Valentine's Day theme. A survey with open and closed questions was conducted to gather data on the preferences and personalities of the students. Then, an algorithm powered by machine learning tools was developed to match the students based on a preprocessing of their responses. </>,
@@ -78,11 +124,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       thumbImage: "images/projects/robocupido-1.jpeg",
       sliderImages: [
-        "images/projects/home-2.png",
-        "images/projects/home-3.jpeg",
-        "images/projects/home-4.jpg",
+        "images/projects/robocupido-2.png",
       ],
-      categories: [filters.ROBOTICS],
+      categories: [filters.SOFTWARE],
     },
     {
       title: "IEEE Latin American Robotics Competition",
