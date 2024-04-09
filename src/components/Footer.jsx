@@ -18,7 +18,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
               <li className="nav-item">
               </li>
               <li className="nav-item">
-                Last Update: January 31, 2024
+                Last Update: April 9, 2024
               </li>
             </ul>
           </div>
