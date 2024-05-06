@@ -1,6 +1,6 @@
 # My personal portfolio
 
-Created with a [ThemeForest template in React](https://themeforest.net/item/simone-personal-portfolio-react-template/42757507) and deployed to GitHub Pages.
+Created based in a [ThemeForest template in React](https://themeforest.net/item/simone-personal-portfolio-react-template/42757507) and deployed to GitHub Pages.
 
 ## Requirements
 - Node JS (v18.0+)
