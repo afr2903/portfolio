@@ -47,36 +47,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.MECHATRONICS],
     },
     {
-      title: "Robotic Welding Cell Simulation",
-      projectInfo: [
-        <> Created a digital twin of the cyber-physical factory in a <b>Unity AR/VR</b> application as an immersive learning tool. This feature was the core topic for a research paper presented at the <a href="https://clf2024.org" target="_blank" rel="noopener noreferrer">Conference for Learning Factories 2024</a> in collaboration with my university and the University of Alberta. </>,
-        <> Led a team of students as Project Manager, assigning tasks for the Automation, Vision, Manufacturing and VR. In charge of maintenance of the robotic mobile bases' embedded systems, and to secure an stable IP ethernet network in the laboratory for Modbus communication.</>
-      ],
-      client: "Tecnológico de Monterrey, University of Alberta",
-      technologies: "Unity AR/VR, VIVE Pro, Modbus, ROS, Python, Latex",
-      industry: "Cyber-Physical Factories",
-      date: "February 2023 - Present",
-      urls: [ 
-        {
-          icon: "fa-solid fa-file",
-          name: "Research paper accepted for the CLF 2024",
-          link: "https://drive.google.com/file/d/17yhBAT-Kk5tmF0ToO8gbzEfFKyfjPzla/view?usp=sharing"
-        },
-        {
-          icon: "fa-brands fa-slideshare",
-          name: "Presentation Virtual Twins",
-          link: "https://www.canva.com/design/DAGCokb5ktg/3XxPslQ3X4q__oq15HWYFg/view",
-        },
-      ],
-      thumbImage: "images/projects/virtual-twin-1.png",
-      sliderImages: [
-        "images/projects/home-2.png",
-        "images/projects/home-3.jpeg",
-        "images/projects/home-4.jpg",
-      ],
-      categories: [filters.MECHATRONICS],
-    },
-    {
       title: "FrED Factory",
       projectInfo: [
         <> Collaborative robotics challenge. Assembly of a production line with collaborative robots, PLCs, HMIs, sensors and actuators, also simulated in Tecnomatix. Use of additive and conventional manufacturing techniques for the station design. </>,
@@ -94,6 +64,33 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         }
       ],
       thumbImage: "images/projects/fred-1.jpg",
+      sliderImages: [
+      ],
+      categories: [filters.MECHATRONICS],
+    },
+    {
+      title: "Robotic Welding Cell Simulation",
+      projectInfo: [
+        <> Simulating in RobotStudio an industrial welding station following ANSI/RIA and Industry 5.0 guidelines. </>,
+        <> Defined the project scope, financial analysis, quality deployment and risk assessment documentation. </>
+      ],
+      client: "ABB, Tecnológico de Monterrey",
+      technologies: "Robot Studio, Excel, Project management",
+      industry: "Cyber-Physical Factories",
+      date: "February 2023 - Present",
+      urls: [ 
+        {
+          icon: "fa-solid fa-file",
+          name: "Research paper accepted for the CLF 2024",
+          link: "https://drive.google.com/file/d/17yhBAT-Kk5tmF0ToO8gbzEfFKyfjPzla/view?usp=sharing"
+        },
+        {
+          icon: "fa-brands fa-slideshare",
+          name: "Presentation Virtual Twins",
+          link: "https://www.canva.com/design/DAGCokb5ktg/3XxPslQ3X4q__oq15HWYFg/view",
+        },
+      ],
+      thumbImage: "images/projects/abb-1.png",
       sliderImages: [
       ],
       categories: [filters.MECHATRONICS],
@@ -336,7 +333,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
               }
             >
               {" "}
-              My Work
+              My Projects
               <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
             </p>
           </div>
