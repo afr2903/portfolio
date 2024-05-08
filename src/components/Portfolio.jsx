@@ -47,6 +47,58 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.MECHATRONICS],
     },
     {
+      title: "Robotic Welding Cell Simulation",
+      projectInfo: [
+        <> Created a digital twin of the cyber-physical factory in a <b>Unity AR/VR</b> application as an immersive learning tool. This feature was the core topic for a research paper presented at the <a href="https://clf2024.org" target="_blank" rel="noopener noreferrer">Conference for Learning Factories 2024</a> in collaboration with my university and the University of Alberta. </>,
+        <> Led a team of students as Project Manager, assigning tasks for the Automation, Vision, Manufacturing and VR. In charge of maintenance of the robotic mobile bases' embedded systems, and to secure an stable IP ethernet network in the laboratory for Modbus communication.</>
+      ],
+      client: "Tecnológico de Monterrey, University of Alberta",
+      technologies: "Unity AR/VR, VIVE Pro, Modbus, ROS, Python, Latex",
+      industry: "Cyber-Physical Factories",
+      date: "February 2023 - Present",
+      urls: [ 
+        {
+          icon: "fa-solid fa-file",
+          name: "Research paper accepted for the CLF 2024",
+          link: "https://drive.google.com/file/d/17yhBAT-Kk5tmF0ToO8gbzEfFKyfjPzla/view?usp=sharing"
+        },
+        {
+          icon: "fa-brands fa-slideshare",
+          name: "Presentation Virtual Twins",
+          link: "https://www.canva.com/design/DAGCokb5ktg/3XxPslQ3X4q__oq15HWYFg/view",
+        },
+      ],
+      thumbImage: "images/projects/virtual-twin-1.png",
+      sliderImages: [
+        "images/projects/home-2.png",
+        "images/projects/home-3.jpeg",
+        "images/projects/home-4.jpg",
+      ],
+      categories: [filters.MECHATRONICS],
+    },
+    {
+      title: "FrED Factory",
+      projectInfo: [
+        <> Collaborative robotics challenge. Assembly of a production line with collaborative robots, PLCs, HMIs, sensors and actuators, also simulated in Tecnomatix. Use of additive and conventional manufacturing techniques for the station design. </>,
+        <> I led the programming and automation area of the project, implementing Software Engineering practices, documentation, Agile project management and innovative AI and data analysis features in the scope of Industry 5.0. </>
+      ],
+      client: "Massachusetts Institute of Technology, Tecnologico de Monterrey",
+      technologies: "Python, Unity, SolidWorks, OpenAI, TiaPortal, SCRUM, Git",
+      industry: "Industry 5.0",
+      date: "February 2024 - May 2024",
+      urls: [ 
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/afr2903/FrED-factory",
+        }
+      ],
+      thumbImage: "images/projects/fred-1.jpg",
+      sliderImages: [
+      ],
+      categories: [filters.MECHATRONICS],
+    },
+    {
       title: "RoboCup @HOME",
       projectInfo: [
         <> Development of an autonomous service robot with my university's robotics team, which is actively participating in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> research competition. Capable of listening and responding to commands such as going to a target place or bringing specific objects. Using ROS framework in Nvidia Jetson Xavier. Leading and working on: </>,
@@ -87,28 +139,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/home-4.jpg",
       ],
       categories: [filters.ROBOTICS],
-    },
-    {
-      title: "FrED Factory",
-      projectInfo: [
-        <> Collaborative robotics challenge. Assembly of a production line working alongside collaborative robots, programming PLCs, HMIs, sensors and actuators. Simulating and programming digital twins. </>,
-        <> I led the programming area of the whole class, teaching CI/CD practices, documentation and Agile project management. </>
-      ],
-      client: "Massachusetts Institute of Technology, Tecnologico de Monterrey",
-      technologies: "Python, Unity, SolidWorks, OpenAI, TiaPortal, SCRUM, Git",
-      industry: "Industry 5.0",
-      date: "February 2024 - May 2024",
-      urls: [ 
-        {
-          icon: "fab fa-github",
-          name: "GitHub Repo",
-          link: "https://github.com/afr2903/FrED-factory",
-        }
-      ],
-      thumbImage: "images/projects/fred-1.png",
-      sliderImages: [
-      ],
-      categories: [filters.MECHATRONICS],
     },
     {
       title: "Manchester Robotics Challenges",
