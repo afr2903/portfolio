@@ -33,7 +33,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Adán Flores,</span> a Robotics Software Engineer
+              I'm <span className="text-primary">Adán Flores,</span> a Mechatronics {/*Robotics Software*/} Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
               I develop software for robotics, artificial intelligence and automation applications. R&D in Mobile Robotics and Extended Reality.
