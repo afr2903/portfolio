@@ -17,6 +17,47 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
+      title: "Friendly Robotic Interactive Domestic Assistant",
+      projectInfo: [
+        <> Development of the <b>Friendly Robotic Interactive Domestic Assistant (FRIDA)</b>,  an autonomous service robot with my university's robotics team, to compete in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> 2024 research competition in Eindhoven. Capable of environment awareness and human-robot interaction to resolve any requests. Using ROS and ROS2 framework on Ubuntu 22.04 and Linux headless systems with Docker. Leading and working on: </>,
+        <>● <i>Behavior Integration:</i> Implementing CI/CD with Docker and CMake files and merging submodules with ROS nodes to achieve adaptive behaviors.</>,
+        <>● <i>Object Detection/Manipulation:</i> Using OMPL planning and MoveIt, and developing RL for a 6-DOF robotic arm with a depth camera to achieve dynamic grasping with collision avoidance. Using YoloV8 for detections.</>,
+        <>● <i>Human-Robot Interaction:</i> Fine-tuning of a local LLM model to transform voice commands into robot actions. Implementation speech-to-text and embeddings transformers. </>
+      ],
+      client: "Tecnológico de Monterrey, RoBorregos",
+      technologies: "ROS, ROS2, Docker, C++, Python, OpenAI, Llama, PyTorch, MoveIt, PyTorch",
+      industry: "Service Robotics",
+      date: "February 2024 - Present",
+      urls: [ 
+        {
+          icon: "fa-brands fa-youtube",
+          name: "Receptionist task",
+          link: "",
+        },
+        {
+          icon: "fa-brands fa-youtube",
+          name: "Serve Breakfast task",
+          link: "https://drive.google.com/file/d/1NiSe3Ym0veZD8BBu9oOp9-P2FIC4RqTV/view?usp=sharing",
+        },
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/RoBorregos/home",
+        },
+        {
+          icon: "fa-solid fa-newspaper",
+          name: "Poster presented at the university's engineering fair",
+          link: "https://drive.google.com/file/d/1A98j-gd1dZQqXc6BxjoYxWoXqjLDkyTm/view?usp=sharing"
+        },
+      ],
+      thumbImage: "images/projects/frida-1.jpeg",
+      sliderImages: [
+        "images/projects/frida-2.jpeg",
+        "images/projects/frida-3.jpeg",
+      ],
+      categories: [filters.ROBOTICS],
+    },
+    {
       title: "Smart Factory Virtual Twin",
       projectInfo: [
         <> Created a digital twin of the cyber-physical factory in a <b>Unity AR/VR</b> application as an immersive learning tool. This feature was the core topic for a research paper presented at the <a href="https://clf2024.org" target="_blank" rel="noopener noreferrer">Conference for Learning Factories 2024</a> in collaboration with my university and the University of Alberta. </>,
@@ -40,9 +81,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       thumbImage: "images/projects/virtual-twin-1.png",
       sliderImages: [
-        "images/projects/home-2.png",
-        "images/projects/home-3.jpeg",
-        "images/projects/home-4.jpg",
+        "images/projects/virtual-twin-2.png",
+        "images/projects/virtual-twin-3.png",
       ],
       categories: [filters.MECHATRONICS],
     },
@@ -75,19 +115,14 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         <> Defined the project scope, financial analysis, quality deployment and risk assessment documentation. </>
       ],
       client: "ABB, Tecnológico de Monterrey",
-      technologies: "Robot Studio, Excel, Project management",
+      technologies: "Robot Studio, Excel, Financial analysis, Project management",
       industry: "Cyber-Physical Factories",
       date: "February 2023 - Present",
       urls: [ 
         {
-          icon: "fa-solid fa-file",
-          name: "Research paper accepted for the CLF 2024",
-          link: "https://drive.google.com/file/d/17yhBAT-Kk5tmF0ToO8gbzEfFKyfjPzla/view?usp=sharing"
-        },
-        {
           icon: "fa-brands fa-slideshare",
-          name: "Presentation Virtual Twins",
-          link: "https://www.canva.com/design/DAGCokb5ktg/3XxPslQ3X4q__oq15HWYFg/view",
+          name: "Final Presentation",
+          link: "https://www.canva.com/design/DAGD3tWqgkQ/gLxbJ_A7HopHrsvZwxtAqw/view",
         },
       ],
       thumbImage: "images/projects/abb-1.png",
@@ -96,17 +131,17 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.MECHATRONICS],
     },
     {
-      title: "RoboCup @HOME",
+      title: "RoboCup @HOME 2023",
       projectInfo: [
-        <> Development of an autonomous service robot with my university's robotics team, which is actively participating in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> research competition. Capable of listening and responding to commands such as going to a target place or bringing specific objects. Using ROS framework in Nvidia Jetson Xavier. Leading and working on: </>,
+        <> 2023 developments of an autonomous service robot with my university's robotics team, which is actively participating in <a href="https://athome.robocup.org" target="_blank" rel="noopener noreferrer">RoboCup @HOME</a> research competition. Capable of listening and responding to commands such as going to a target place or bringing specific objects. Using ROS framework in Nvidia Jetson Xavier. Leading and working on: </>,
         <>● <i>Behavior Integration:</i> Merge of software submodules in a single script (node) to achieve adaptive behaviors.</>,
         <>● <i>Object Detection/Manipulation:</i> MoveIt trajectory planning framework with robot context created using a depth camera to detect collisions, and detections from a YoloV8 model. </>,
         <>● <i>Human-Robot Interaction:</i> Implementation of Whisper and Embeddings to translate speech into robot commands. </>
       ],
       client: "Tecnológico de Monterrey, RoBorregos",
-      technologies: "ROS, ROS2, C++, Python, LaTex, OpenAI, MoveIt, Yolo, Nvidia Jetson, PyTorch",
+      technologies: "ROS, C++, Python, LaTex, OpenAI, MoveIt, Yolo, Nvidia Jetson, PyTorch",
       industry: "Service Robotics",
-      date: "January 2023 - Present",
+      date: "January 2023 - December 2023",
       urls: [ 
         {
           icon: "fa-brands fa-youtube",
@@ -179,9 +214,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           link: "https://github.com/RoBorregos/robocupido_2024",
         }
       ],
-      thumbImage: "images/projects/robocupido-1.jpeg",
+      thumbImage: "images/projects/robocupido-2.png",
       sliderImages: [
-        "images/projects/robocupido-2.png",
+        "images/projects/robocupido-1.jpeg",
       ],
       categories: [filters.SOFTWARE],
     },
@@ -260,7 +295,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       projectInfo: [
         <>University's project for the Mechatronic Design class. A project had to be proposed from scratch to help the fullfilment of one of the <a href="https://www.un.org/sustainabledevelopment/en/" target="_blank" rel="noopener noreferrer">UN's Sustainable Development Goals</a>. My team and I proposed a waste classifier machine, capable of identifying and separating plastic, glass, and aluminum using a YoloV8 model trained on a large dataset. </>,
       ],
-      client: "ITESM",
+      client: "Tecnológico de Monterrey",
       technologies: "Python, Arduino, YoloV8, Tensorflow, Nvidia Jetson, OpenCV, Additive Manufacturing",
       industry: "Product Design",
       date: "October 2023 - November 2023",
@@ -280,6 +315,34 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       sliderImages: [
         "images/projects/waste-classifier-2.png",
         "images/projects/waste-classifier-3.png",
+      ],
+      categories: [filters.MECHATRONICS],
+    },
+    {
+      title: "Autonomous goalkeeper",
+      projectInfo: [
+        <> University's project for the Implementation of Mechatronic Systems class. Each team had to design, manufacture and program a goalkeeper at scale with a remote controller to compete with the other teams in the class. </>,
+        <> Furthermore, I decided to implement a full autonomous machine with the addition of Computer Vision with the PixyCam to detect the ball and follow it with a PID controller. </>
+      ],
+      client: "Tecnológico de Monterrey",
+      technologies: "Arduino, PixyMun, SolidWorks, Additive manufacturing, Laser cutting",
+      industry: "Automation",
+      date: "May 2023 - June 2023",
+      urls: [ 
+        {
+          icon: "fab fa-github",
+          name: "GitHub Repo",
+          link: "https://github.com/afr2903/goalkeeper-project"
+        },
+        {
+          icon: "fa-solid fa-youtube",
+          name: "Class competition video",
+          link: "https://drive.google.com/file/d/12tiG7vA7d15Kj8mq1T6F-sR1WTa9EDdH/view?usp=sharing"
+        },
+      ],
+      thumbImage: "images/projects/goalkeeper-1.jpg",
+      sliderImages: [
+        "images/projects/goalkeeper-2.jpg"
       ],
       categories: [filters.MECHATRONICS],
     },
