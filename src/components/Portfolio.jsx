@@ -32,7 +32,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         {
           icon: "fa-brands fa-youtube",
           name: "Receptionist task",
-          link: "",
+          link: "https://drive.google.com/file/d/1NkwxFQ1QE9HnnGRiESyvIKPoAZjHACSa/view?usp=drive_link",
         },
         {
           icon: "fa-brands fa-youtube",
