@@ -6,12 +6,12 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
   return (
     <section id="home">
       <div className="hero-wrap">
-        <div className="hero-mask opacity-6 bg-dark" />
+        <div className="hero-mask opacity-8 bg-dark" />
 
         {/* ---------------image background------------------ */}
         {<div
           className="hero-bg parallax"
-          style={{ backgroundImage: 'url("images/larc-bg.jpg")' }}
+          style={{ backgroundImage: 'url("images/home-bg.jpg")' }}
   ></div>}
 
         {/* -------------------video background---------------------- */}
@@ -38,7 +38,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                         "I'm Adán Flores",
                         "I'm a Software Engineer",
                         "I'm a Robotics Developer",
-                        "I'm a Mechatronics Student",
+                        "I'm a Mechatronics Engineer",
                       ],
                       autoStart: true,
                       loop: true,
@@ -46,7 +46,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   />
                 </h2>
                 <p className="text-5 text-light mb-4">
-                  based in San Luis Potosí, México.
+                  from in San Luis Potosí, México.
                 </p>
                 <a
                   href="#contact"

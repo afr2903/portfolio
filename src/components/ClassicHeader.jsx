@@ -52,7 +52,7 @@ const ClassicHeader = ({ handleNavClick }) => {
             >
               {" "}
               
-              <img style={{borderRadius: 20, width: 50, marginLeft: 20}} src="images/me.jpg" alt="Adán" />{" "}
+              <img style={{borderRadius: 20, width: 50, marginLeft: 20}} src="images/me_sf.jpg" alt="Adán" />{" "}
             </Link>
             {/* Logo End */}
           </div>
