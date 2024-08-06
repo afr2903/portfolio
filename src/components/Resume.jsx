@@ -25,9 +25,10 @@ const Resume = ({ classicHeader, darkTheme }) => {
   const experienceDetails = [
     {
       yearRange: "Jun 2024 - Sep 2024",
-      title: "Incoming Software Engineer Intern",
-      place: "Google - Cloud Vertex AI",
+      title: "Software Engineer Intern",
+      place: "Google - Cloud AI",
       src: "images/logos/google.jpg",
+      keypoints: "Vertex AI Self Service team. Developing parallel data processing pipelines in C++ to enhance data synchronization frequencies for clients.",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
