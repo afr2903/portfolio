@@ -24,6 +24,14 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const experienceDetails = [
     {
+      yearRange: "Sep 2024 - Dec 2024",
+      title: "Incoming Research Intern",
+      place: "Massachussets Institute of Technology - Device Realization Laboratory",
+      src: "images/logos/mit.png",
+      keypoints: "",
+      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    },
+    {
       yearRange: "Jun 2024 - Sep 2024",
       title: "Software Engineer Intern",
       place: "Google - Cloud AI",
