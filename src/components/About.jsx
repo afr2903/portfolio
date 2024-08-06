@@ -33,17 +33,21 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Adán Flores,</span> a Mechatronics {/*Robotics Software*/} Engineer
+              I'm <span className="text-primary">Adán Flores</span>, a Robotics Software Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I develop software for robotics, artificial intelligence and automation applications. R&D in Mobile Robotics and Extended Reality.
-              I'm a proficient and passionate engineering student with experience in team-based software development and robotics, 
-              always eager to learn and self-driven towards solving world problems.
+              I develop software for robotics, backend, artificial intelligence 
+              and automation applications. R&D in Mobile Robotics and Extended 
+              Reality. I'm a proficient and passionate engineering student with 
+              experience in software engineering and robotics, always eager to 
+              learn and self-driven towards solving world problems.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              After several years of experience in international robotics and programming competitions 
-              as well as learning courses and personal projects, I have gained outstanding skills in problem solving, 
-              research and leadership. Also, my determination and my ability as a technician have been proved useful under pressure.
+              With several years of experience in international robotics and 
+              programming competitions as well as learning courses and personal 
+              projects, I have gained outstanding skills in problem solving, 
+              research and leadership.After several years of experience in 
+              international robotics and programming competitions.
             </p>
           </div>
           {/* About me content end */}
